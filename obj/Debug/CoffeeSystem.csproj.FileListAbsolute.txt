@@ -1,0 +1,14 @@
+C:\Users\Sokharine Sun\source\repos\CoffeeSystem\bin\Debug\CoffeeSystem.exe.config
+C:\Users\Sokharine Sun\source\repos\CoffeeSystem\bin\Debug\CoffeeSystem.exe
+C:\Users\Sokharine Sun\source\repos\CoffeeSystem\bin\Debug\CoffeeSystem.pdb
+C:\Users\Sokharine Sun\source\repos\CoffeeSystem\obj\Debug\CoffeeSystem.csproj.AssemblyReference.cache
+C:\Users\Sokharine Sun\source\repos\CoffeeSystem\obj\Debug\CoffeeSystem.Properties.Resources.resources
+C:\Users\Sokharine Sun\source\repos\CoffeeSystem\obj\Debug\CoffeeSystem.csproj.GenerateResource.cache
+C:\Users\Sokharine Sun\source\repos\CoffeeSystem\obj\Debug\CoffeeSystem.csproj.CoreCompileInputs.cache
+C:\Users\Sokharine Sun\source\repos\CoffeeSystem\obj\Debug\CoffeeSystem.exe
+C:\Users\Sokharine Sun\source\repos\CoffeeSystem\obj\Debug\CoffeeSystem.pdb
+C:\Users\Sokharine Sun\source\repos\CoffeeSystem\obj\Debug\CoffeeSystem.CategoryForm.resources
+C:\Users\Sokharine Sun\source\repos\CoffeeSystem\obj\Debug\CoffeeSystem.UI.EmployeeForm.resources
+C:\Users\Sokharine Sun\source\repos\CoffeeSystem\obj\Debug\CoffeeSystem.UI.InvoiceForm.resources
+C:\Users\Sokharine Sun\source\repos\CoffeeSystem\obj\Debug\CoffeeSystem.UI.ProductForm.resources
+C:\Users\Sokharine Sun\source\repos\CoffeeSystem\obj\Debug\CoffeeSystem.UI.MenuForm.resources
