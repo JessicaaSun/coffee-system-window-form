@@ -187,5 +187,12 @@ namespace CoffeeSystem.UI
             this.Hide();
             form.Show();
         }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            DashboardForm form = new DashboardForm();
+            this.Hide();
+            form.Show();
+        }
     }
 }

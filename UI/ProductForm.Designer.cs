@@ -50,6 +50,7 @@ namespace CoffeeSystem.UI
             this.label9 = new System.Windows.Forms.Label();
             this.txtQty = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView)).BeginInit();
             this.panel2.SuspendLayout();
@@ -210,6 +211,7 @@ namespace CoffeeSystem.UI
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
+            this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
@@ -308,6 +310,18 @@ namespace CoffeeSystem.UI
             this.label8.TabIndex = 12;
             this.label8.Text = "Quantity";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(43, 23);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(121, 31);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "Dashoard";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
             // ProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -351,5 +365,6 @@ namespace CoffeeSystem.UI
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox categoryCambobox;
+        private System.Windows.Forms.Label label10;
     }
 }

@@ -32,14 +32,66 @@ namespace CoffeeSystem.Repository
 
         public void Insert(Invoice invoice)
         {
-            var conn = Database.GetConnection();
-            conn.Open();
-            var cmd = new SqlCommand(
-                "INSERT INTO invoices (UserId, InvoiceDate, TotalAmount) VALUES (@user, @date, @total)", conn);
-            cmd.Parameters.AddWithValue("@user", invoice.UserId);
-            cmd.Parameters.AddWithValue("@date", invoice.InvoiceDate);
-            cmd.Parameters.AddWithValue("@total", invoice.TotalAmount);
-            cmd.ExecuteNonQuery();
+            using (var conn = Database.GetConnection())
+            {
+                conn.Open();
+                var cmd = new SqlCommand(
+                    "INSERT INTO invoices (user_id, invoice_date, total_amount) VALUES (@user, @date, @total)", conn);
+                cmd.Parameters.AddWithValue("@user", invoice.UserId);
+                cmd.Parameters.AddWithValue("@date", invoice.InvoiceDate);
+                cmd.Parameters.AddWithValue("@total", invoice.TotalAmount);
+                cmd.ExecuteNonQuery();
+            }
         }
+
+        public decimal GetTotalSales()
+        {
+            using (var conn = Database.GetConnection())
+            {
+                conn.Open();
+                var cmd = new SqlCommand("SELECT SUM(total_amount) FROM invoices", conn);
+                var result = cmd.ExecuteScalar();
+                return result != DBNull.Value ? Convert.ToDecimal(result) : 0;
+            }
+        }
+
+        public int GetTotalInvoices()
+        {
+            using (var conn = Database.GetConnection())
+            {
+                conn.Open();
+                var cmd = new SqlCommand("SELECT COUNT(*) FROM invoices", conn);
+                return (int)cmd.ExecuteScalar();
+            }
+        }
+
+        public int GetTotalProducts()
+        {
+            using (var conn = Database.GetConnection())
+            {
+                conn.Open();
+                var cmd = new SqlCommand("SELECT COUNT(*) FROM products", conn);
+                return (int)cmd.ExecuteScalar();
+            }
+        }
+
+        public decimal GetTodaySales()
+        {
+            using (var conn = Database.GetConnection())
+            {
+                conn.Open();
+                var cmd = new SqlCommand(
+                    "SELECT SUM(total_amount) FROM invoices WHERE CAST(invoice_date AS DATE) = CAST(GETDATE() AS DATE)",
+                    conn
+                );
+                var result = cmd.ExecuteScalar();
+                return result != DBNull.Value ? Convert.ToDecimal(result) : 0;
+            }
+        }
+
+
+
+
+
     }
 }

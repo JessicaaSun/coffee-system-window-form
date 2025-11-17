@@ -46,6 +46,7 @@ namespace CoffeeSystem
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.menu = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.categoryDataGridView)).BeginInit();
@@ -190,6 +191,7 @@ namespace CoffeeSystem
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
+            this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
@@ -200,6 +202,7 @@ namespace CoffeeSystem
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(275, 677);
             this.panel2.TabIndex = 0;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label5
             // 
@@ -261,6 +264,18 @@ namespace CoffeeSystem
             this.menu.Text = "Menu";
             this.menu.Click += new System.EventHandler(this.menu_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(45, 16);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(97, 25);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "Dashoard";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
             // CategoryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -301,6 +316,7 @@ namespace CoffeeSystem
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label10;
     }
 }
 

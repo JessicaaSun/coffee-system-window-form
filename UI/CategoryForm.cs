@@ -139,5 +139,17 @@ namespace CoffeeSystem
             this.Hide();
             form.Show();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            DashboardForm form = new DashboardForm();
+            this.Hide();
+            form.Show();
+        }
     }
 }

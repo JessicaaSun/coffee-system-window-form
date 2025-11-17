@@ -12,3 +12,4 @@ C:\Users\Sokharine Sun\source\repos\CoffeeSystem\obj\Debug\CoffeeSystem.UI.Emplo
 C:\Users\Sokharine Sun\source\repos\CoffeeSystem\obj\Debug\CoffeeSystem.UI.InvoiceForm.resources
 C:\Users\Sokharine Sun\source\repos\CoffeeSystem\obj\Debug\CoffeeSystem.UI.ProductForm.resources
 C:\Users\Sokharine Sun\source\repos\CoffeeSystem\obj\Debug\CoffeeSystem.UI.MenuForm.resources
+C:\Users\Sokharine Sun\source\repos\CoffeeSystem\obj\Debug\CoffeeSystem.UI.DashboardForm.resources

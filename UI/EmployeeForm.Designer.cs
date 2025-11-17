@@ -50,6 +50,7 @@ namespace CoffeeSystem.UI
             this.btnDelete = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -139,6 +140,7 @@ namespace CoffeeSystem.UI
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
+            this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
@@ -228,9 +230,9 @@ namespace CoffeeSystem.UI
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(21, 15);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(217, 25);
+            this.label4.Size = new System.Drawing.Size(298, 31);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Product Management";
+            this.label4.Text = "Employee Management";
             // 
             // panel3
             // 
@@ -308,6 +310,18 @@ namespace CoffeeSystem.UI
             this.txtPassword.Size = new System.Drawing.Size(380, 33);
             this.txtPassword.TabIndex = 15;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(43, 22);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(97, 25);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "Dashoard";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
             // EmployeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -350,5 +364,6 @@ namespace CoffeeSystem.UI
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Label label10;
     }
 }

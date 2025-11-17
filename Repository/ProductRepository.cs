@@ -13,7 +13,7 @@ namespace CoffeeSystem.Repository
             var list = new List<Product>();
             using (var conn = Database.GetConnection())
             {
-                conn.Open(); 
+                conn.Open();
                 var cmd = new SqlCommand("SELECT * FROM products", conn);
                 var reader = cmd.ExecuteReader();
                 while (reader.Read())
